@@ -1,0 +1,542 @@
+Last login: Mon Aug  1 19:53:20 on ttys000
+(base) laurapalmer@lauras-mbp ~ % pwd
+/Users/laurapalmer
+(base) laurapalmer@lauras-mbp ~ % git --version
+git version 2.30.1 (Apple Git-130)
+(base) laurapalmer@lauras-mbp ~ % brew upgrade git
+Running `brew update --auto-update`...
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+berkeley-db@5                            open62541
+cargo-depgraph                           page
+chain-bench                              pint
+cpp-httplib                              pkcs11-tools
+dura                                     prql-compiler
+gaze                                     prr
+git-delete-merged-branches               sgr
+gum                                      smap
+libeatmydata                             tlsx
+mesheryctl                               x86_64-linux-gnu-binutils
+onlykey-agent
+git -
+-version
+Error: git not installed
+(base) laurapalmer@lauras-mbp ~ % git --version
+git version 2.30.1 (Apple Git-130)
+(base) laurapalmer@lauras-mbp ~ % git --version
+git version 2.30.1 (Apple Git-130)
+(base) laurapalmer@lauras-mbp ~ % brew upgrade git
+Error: git not installed
+(base) laurapalmer@lauras-mbp ~ % brew install git
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.21
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:0e93b52648
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.40
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:3d2707e8d5a8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git/manifests/2.37.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blobs/sha256:81368cd1e77f36
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Installing dependencies for git: gettext and pcre2
+==> Installing git dependency: gettext
+==> Pouring gettext--0.21.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/gettext/0.21: 1,953 files, 20.2MB
+==> Installing git dependency: pcre2
+==> Pouring pcre2--10.40.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre2/10.40: 230 files, 6.4MB
+==> Installing git
+==> Pouring git--2.37.1.monterey.bottle.tar.gz
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+==> Summary
+🍺  /usr/local/Cellar/git/2.37.1: 1,559 files, 44.6MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+(base) laurapalmer@lauras-mbp ~ % brew install git
+Warning: git 2.37.1 is already installed and up-to-date.
+To reinstall 2.37.1, run:
+  brew reinstall git
+(base) laurapalmer@lauras-mbp ~ % git --version
+git version 2.30.1 (Apple Git-130)
+(base) laurapalmer@lauras-mbp ~ % brew upgrade git
+Warning: git 2.37.1 already installed
+(base) laurapalmer@lauras-mbp ~ % brew install git-lfs
+==> Downloading https://ghcr.io/v2/homebrew/core/git-lfs/manifests/3.2.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git-lfs/blobs/sha256:2ccd239da9
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Pouring git-lfs--3.2.0.monterey.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/git-lfs
+Target /usr/local/bin/git-lfs
+already exists. You may want to remove it:
+  rm '/usr/local/bin/git-lfs'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite git-lfs
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run git-lfs
+
+Possible conflicting files are:
+/usr/local/bin/git-lfs
+==> Caveats
+Update your git config to finish installation:
+
+  # Update global git config
+  $ git lfs install
+
+  # Update system git config
+  $ git lfs install --system
+==> Summary
+🍺  /usr/local/Cellar/git-lfs/3.2.0: 3 files, 11.2MB
+==> Running `brew cleanup git-lfs`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+(base) laurapalmer@lauras-mbp ~ % git-lfs --version
+git-lfs/3.2.0 (GitHub; darwin amd64; go 1.18.2)
+(base) laurapalmer@lauras-mbp ~ % pwd
+/Users/laurapalmer
+(base) laurapalmer@lauras-mbp ~ % ls
+Applications			Music
+CP Leadership LLC Dropbox	Pictures
+Creative Cloud Files		Public
+Desktop				UofU-VIRT-DATA-PT-07-2022-U-B
+Documents			opt
+Downloads			sample.txt
+Library				test.txt
+Movies
+(base) laurapalmer@lauras-mbp ~ % cd Desktop
+(base) laurapalmer@lauras-mbp Desktop % CD go on now, GIT
+/usr/bin/CD: line 4: cd: go: No such file or directory
+(base) laurapalmer@lauras-mbp Desktop % cd go on now git
+cd: too many arguments
+(base) laurapalmer@lauras-mbp Desktop % cd school
+(base) laurapalmer@lauras-mbp school % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	1-1-Student-Resources.zip
+	1-Student-Resources/
+	3-1-Student-Resources.zip
+	3-2-Student-Resources.zip
+	Book2.xlsm
+	CrowdFunding Project 1/
+	Helpful/
+	Module PowerPoints/
+	README.md
+	Screen Shot 2022-07-24 at 12.25.44 PM.png
+	Screen Shot 2022-07-24 at 12.26.01 PM.png
+	UofU Virtual GitLab/
+	UofU-VIRT-DATA-PT-07-2022-U-B-1/
+	UofU-VIRT-DATA-PT-07-2022-U-B-2/
+	UofU-VIRT-DATA-PT-07-2022-U-B/
+	VBAMacrosClassUpdates.xlsm
+	Work:School Schedule (2022).png
+	data-1-1-3-StarterBook.xlsx
+	green_stocks.xlsm
+	green_stocks.xlsx
+	kickstarter-analysis/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) laurapalmer@lauras-mbp school % cd desktop
+cd: no such file or directory: desktop
+(base) laurapalmer@lauras-mbp school % pwd
+/Users/laurapalmer/Desktop/school
+(base) laurapalmer@lauras-mbp school % cd election analysis
+cd: string not in pwd: election
+(base) laurapalmer@lauras-mbp school % ls
+1-1-Student-Resources.zip
+1-Student-Resources
+3-1-Student-Resources.zip
+3-2-Student-Resources.zip
+Book2.xlsm
+Challenges
+CrowdFunding Project 1
+Election Analysis
+Helpful
+Module PowerPoints
+README.md
+Screen Shot 2022-07-24 at 12.25.44 PM.png
+Screen Shot 2022-07-24 at 12.26.01 PM.png
+UofU Virtual GitLab
+UofU-VIRT-DATA-PT-07-2022-U-B
+UofU-VIRT-DATA-PT-07-2022-U-B-1
+UofU-VIRT-DATA-PT-07-2022-U-B-2
+VBAMacrosClassUpdates.xlsm
+Work:School Schedule (2022).png
+data-1-1-3-StarterBook.xlsx
+green_stocks.xlsm
+green_stocks.xlsx
+kickstarter-analysis
+(base) laurapalmer@lauras-mbp school % cd Election Analysis
+cd: string not in pwd: Election
+(base) laurapalmer@lauras-mbp school % cd desktop
+cd: no such file or directory: desktop
+(base) laurapalmer@lauras-mbp school % cd
+(base) laurapalmer@lauras-mbp ~ % cd/
+zsh: no such file or directory: cd/
+(base) laurapalmer@lauras-mbp ~ % cd /
+(base) laurapalmer@lauras-mbp / % ls
+Applications	Volumes		etc		sbin
+Library		bin		home		tmp
+System		cores		opt		usr
+Users		dev		private		var
+(base) laurapalmer@lauras-mbp / % pwd
+/
+(base) laurapalmer@lauras-mbp / % cd desktop
+cd: no such file or directory: desktop
+(base) laurapalmer@lauras-mbp / % cd School
+cd: no such file or directory: School
+(base) laurapalmer@lauras-mbp / % pwd
+/
+(base) laurapalmer@lauras-mbp / % cd Desktop
+cd: no such file or directory: Desktop
+(base) laurapalmer@lauras-mbp / % cd /
+(base) laurapalmer@lauras-mbp / % cd //
+(base) laurapalmer@lauras-mbp / % cd desktop
+cd: no such file or directory: desktop
+(base) laurapalmer@lauras-mbp / % desktop
+zsh: command not found: desktop
+(base) laurapalmer@lauras-mbp / % cd
+(base) laurapalmer@lauras-mbp ~ % pwd
+/Users/laurapalmer
+(base) laurapalmer@lauras-mbp ~ % cd desktop
+(base) laurapalmer@lauras-mbp desktop % cd school
+(base) laurapalmer@lauras-mbp school % cd election analysis
+cd: string not in pwd: election
+(base) laurapalmer@lauras-mbp school % cd electionanalysis
+cd: no such file or directory: electionanalysis
+(base) laurapalmer@lauras-mbp school % cd election_analysis
+cd: no such file or directory: election_analysis
+(base) laurapalmer@lauras-mbp school % cd Election Analysis
+cd: string not in pwd: Election
+(base) laurapalmer@lauras-mbp school % cd Election_Analysis
+cd: no such file or directory: Election_Analysis
+(base) laurapalmer@lauras-mbp school % cd Election
+(base) laurapalmer@lauras-mbp Election % git clone https://github.com/laurpalm/Election_analysis.git
+Cloning into 'Election_analysis'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+(base) laurapalmer@lauras-mbp Election % python3
+Python 3.9.12 (main, Apr  5 2022, 01:53:17) 
+[Clang 12.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> type(3)
+<class 'int'>
+>>> ballots = 1,341
+>>> ballots
+(1, 341)
+>>> type(ballots)
+<class 'tuple'>
+>>> type(73.81)
+<class 'float'>
+>>> counties = ["Arapahoe", "Denver", "Jefferson"]
+>>> counties
+['Arapahoe', 'Denver', 'Jefferson']
+>>> counties[0]]
+  File "<stdin>", line 1
+    counties[0]]
+               ^
+SyntaxError: unmatched ']'
+>>> counties[0]
+'Arapahoe'
+>>> print(counties[2])
+Jefferson
+>>> len(counties)
+3
+>>> counties[0:2]
+['Arapahoe', 'Denver']
+>>> counties[0:1]
+['Arapahoe']
+>>> counties[1:]
+['Denver', 'Jefferson']
+>>> counties.append("El Paso")
+>>> counties
+['Arapahoe', 'Denver', 'Jefferson', 'El Paso']
+>>> counties.insert(2, "El Paso")
+>>> counties
+['Arapahoe', 'Denver', 'El Paso', 'Jefferson', 'El Paso']
+>>> counties.remove("El Paso")
+>>> counties
+['Arapahoe', 'Denver', 'Jefferson', 'El Paso']
+>>> counties.pop(3)
+'El Paso'
+>>> counties
+['Arapahoe', 'Denver', 'Jefferson']
+>>> counties[2] = "El Paso"
+>>> counties
+['Arapahoe', 'Denver', 'El Paso']
+>>> counties_tuple = ("Arapahoe","Denver","Jefferson")
+>>> len(counties_tuple)
+3
+>>> counties_tuple[1]
+'Denver'
+>>> counties_dict["Arapahoe"] = 422829
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'counties_dict' is not defined
+>>> counties_dict = {}
+>>> counties_dict["Araphoe"] = 422829
+>>> counties_dict
+{'Araphoe': 422829}
+>>> counties_dict["Denver"] = 463353
+>>> counties_dict["Jefferson'] = 432438
+  File "<stdin>", line 1
+    counties_dict["Jefferson'] = 432438
+                                       ^
+SyntaxError: EOL while scanning string literal
+>>> counties_dict["Jefferson"] = 432438
+>>> counties_dict
+{'Araphoe': 422829, 'Denver': 463353, 'Jefferson': 432438}
+>>> len(counties_dict)
+3
+>>> counties_dict.items()
+dict_items([('Araphoe', 422829), ('Denver', 463353), ('Jefferson', 432438)])
+>>> counties_dict.keys()
+dict_keys(['Araphoe', 'Denver', 'Jefferson'])
+>>> counties_dict.values()
+dict_values([422829, 463353, 432438])
+>>> counties_dict.get(""Denver"
+  File "<stdin>", line 1
+    counties_dict.get(""Denver"
+                        ^
+SyntaxError: invalid syntax
+>>> counties_dict.get("Denver")
+463353
+>>> counties_dict[Arapahoe]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Arapahoe' is not defined
+>>> counties_dict["Arapahoe"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'Arapahoe'
+>>> counties_dict["Arapahoe"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'Arapahoe'
+>>> dict_items([Arapahoe", 422829), ("Denver", 463353), ("Jefferson", 432438])
+  File "<stdin>", line 1
+    dict_items([Arapahoe", 422829), ("Denver", 463353), ("Jefferson", 432438])
+                        ^
+SyntaxError: invalid syntax
+>>> ^Araphoe^Arapahoe
+  File "<stdin>", line 1
+    ^Araphoe^Arapahoe
+    ^
+SyntaxError: invalid syntax
+>>> counties_dict["Araphoe"]
+422829
+>>> voting_data = []
+>>> voting_data.append({"county":"Araphoe", "registered_voters": 422829})
+>>> voting_data.append({"county":"Denver", "registered_voters": 463353})
+>>> voting_data.append({"county":"Jefferson", "registered_voters": 432438})
+>>> voting_data
+[{'county': 'Araphoe', 'registered_voters': 422829}, {'county': 'Denver', 'registered_voters': 463353}, {'county': 'Jefferson', 'registered_voters': 432438}]
+>>> # how many votes did you get?
+>>> my_votes = int(input("How many votes did you get in the election? "))
+How many votes did you get in the election? 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: ''
+>>> # total votes in the election
+>>> total_votes = int(input("What is the total votes in the election? "))
+What is the total votes in the election? 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: ''
+>>> # calculate the percentage of votes you recieved
+>>> percentage_votes = (my_votes / total_votes) * 100
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'my_votes' is not defined
+>>> print("I recieved " + str(percentage_votes)+"% of the total votes.")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'percentage_votes' is not defined
+>>> my_votes = int(input("How many votes did you get in the election?  "))
+How many votes did you get in the election?  
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: ''
+>>> my_replacement = {
+... 'Araphoe' : 'Arapahoe'
+... # how many votes did you get?
+... my_votes = int(input("How many votes did you get in the election? "))
+  File "<stdin>", line 4
+    my_votes = int(input("How many votes did you get in the election? "))
+    ^
+SyntaxError: invalid syntax
+>>> df['Araphoe'].replace({
+... 'Araphoe' : 'Arapahoe'
+... })
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'df' is not defined
+>>> ['Araphoe'].replace({'Arapahoe'})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'replace'
+>>> git init
+  File "<stdin>", line 1
+    git init
+        ^
+SyntaxError: invalid syntax
+>>> cd python3
+  File "<stdin>", line 1
+    cd python3
+       ^
+SyntaxError: invalid syntax
+>>> cd /
+  File "<stdin>", line 1
+    cd /
+        ^
+SyntaxError: invalid syntax
+>>> cd //
+  File "<stdin>", line 1
+    cd //
+         ^
+SyntaxError: invalid syntax
+>>> cd desktop
+  File "<stdin>", line 1
+    cd desktop
+       ^
+SyntaxError: invalid syntax
+>>> CD
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'CD' is not defined
+>>> cd //
+  File "<stdin>", line 1
+    cd //
+         ^
+SyntaxError: invalid syntax
+>>> pwd
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pwd' is not defined
+>>> cd Election
+  File "<stdin>", line 1
+    cd Election
+       ^
+SyntaxError: invalid syntax
+>>> ls
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ls' is not defined
+>>> $
+  File "<stdin>", line 1
+    $
+    ^
+SyntaxError: invalid syntax
+>>> cd/docu~1/(LauraPalmer)/desktop
+  File "<stdin>", line 1
+    cd/docu~1/(LauraPalmer)/desktop
+           ^
+SyntaxError: invalid syntax
+>>> cd desktop
+  File "<stdin>", line 1
+    cd desktop
+       ^
+SyntaxError: invalid syntax
+>>> cd /
+  File "<stdin>", line 1
+    cd /
+        ^
+SyntaxError: invalid syntax
+>>> cd//
+  File "<stdin>", line 1
+    cd//
+        ^
+SyntaxError: invalid syntax
+>>> cd /
+  File "<stdin>", line 1
+    cd /
+        ^
+SyntaxError: invalid syntax
+>>> cd\docu~1\(laurapalmer)\desktop
+  File "<stdin>", line 1
+    cd\docu~1\(laurapalmer)\desktop
+       ^
+SyntaxError: unexpected character after line continuation character
+>>> cd laurapalmer
+  File "<stdin>", line 1
+    cd laurapalmer
+       ^
+SyntaxError: invalid syntax
+>>> cd
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cd' is not defined
+>>> pwd
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pwd' is not defined
+>>> $
+  File "<stdin>", line 1
+    $
+    ^
+SyntaxError: invalid syntax
+>>> %
+  File "<stdin>", line 1
+    %
+    ^
+SyntaxError: invalid syntax
+>>> ~ $ cd Desktop
+  File "<stdin>", line 1
+    ~ $ cd Desktop
+      ^
+SyntaxError: invalid syntax
+>>> ~/Desktop $
+  File "<stdin>", line 1
+    ~/Desktop $
+     ^
+SyntaxError: invalid syntax
+>>> cd..
+  File "<stdin>", line 1
+    cd..
+       ^
+SyntaxError: invalid syntax
+>>> cd ..
+  File "<stdin>", line 1
+    cd ..
+        ^
+SyntaxError: invalid syntax
+>>> 
